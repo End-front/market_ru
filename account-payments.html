@@ -115,36 +115,51 @@
   </main>
   <div class="modal-background"></div>
 <div class="modal-window modal-window--succes">
-  <span class="h2">Ваша заявка принята!</span>
+  <div class="modal-window__wrapper">
+    <span class="h2">Ваша заявка принята!</span>
+  </div>
 </div>
 <div class="modal-window modal-window--signin">
   <button class="modal-window__exit btn--reset"></button>
-  <div class="h2">Разместите новую заявку чтобы наш менеджер приступил к поиску специалиста!</div>
-  <form>
-    <input class="input input--base" type="text" placeholder="Название заявки">
-    <textarea class="textarea" placeholder="Краткое описание"></textarea>
-    <button type="button" class="btn btn--gradient js-click-modal" data-modal=".modal-window--succes" data-modal-action="next-modal">Опубликовать</button>
-  </form>
+  <div class="modal-window__wrapper">
+    <div class="h2">Разместите новую заявку чтобы наш менеджер приступил к поиску специалиста!</div>
+    <form>
+      <input class="input input--base" type="text" placeholder="ФИО">
+      <div class="inputs">
+        <input class="input input--base" type="text" placeholder="Адрес">
+        <input class="input input--base" type="text" placeholder="Город">
+      </div>
+      <div class="inputs">
+        <input class="input input--base" type="text" placeholder="Дата">
+        <input class="input input--base" type="text" placeholder="Время">
+      </div>
+      <input class="input input--base" type="text" placeholder="Название заявки">
+      <textarea class="textarea" placeholder="Краткое описание"></textarea>
+      <button type="button" class="btn btn--gradient js-click-modal" data-modal=".modal-window--succes" data-modal-action="next-modal">Опубликовать</button>
+    </form>
+  </div>
 </div>
 <div class="modal-window modal-window--signup">
   <button class="modal-window__exit btn--reset"></button>
-  <div class="h2">Войдите на сайт чтобы <span>начать зарабатывать</span></div>
-  <form action="#" method="post">
-    <input class="input input--big" type="text" placeholder="+7 (---) ---_--_--">
-    <input class="input input--big" type="password" placeholder="Пароль">
-    <input type="sumbit" class="btn btn--gradient" value="Войти">
-    <label class="modal-window--signup__remember" for="remember-modal" >
-      <div class="checkbox">
-        <input id="remember-modal" type="checkbox" checked>
-        <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="2" height="6.64713" rx="1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 1.41431 2.96411)" fill="#5181B8"/>
-          <rect x="11.001" width="2" height="10.839" rx="1" transform="rotate(45 11.001 0)" fill="#5181B8"/>
-        </svg>          
-      </div>
-      <span>Запомнить данные</span>
-    </label>
-    <a class="visible" href="#">Восстановить</a>
-  </form>
+  <div class="modal-window__wrapper">
+    <div class="h2">Войдите на сайт чтобы <span>начать зарабатывать</span></div>
+    <form action="#" method="post">
+      <input class="input input--big" type="text" placeholder="+7 (---) ---_--_--">
+      <input class="input input--big" type="password" placeholder="Пароль">
+      <input type="sumbit" class="btn btn--gradient" value="Войти">
+      <label class="modal-window--signup__remember" for="remember-modal" >
+        <div class="checkbox">
+          <input id="remember-modal" type="checkbox" checked>
+          <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="2" height="6.64713" rx="1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 1.41431 2.96411)" fill="#5181B8"/>
+            <rect x="11.001" width="2" height="10.839" rx="1" transform="rotate(45 11.001 0)" fill="#5181B8"/>
+          </svg>          
+        </div>
+        <span>Запомнить данные</span>
+      </label>
+      <a class="visible" href="#">Восстановить</a>
+    </form>
+  </div>
 </div>
   <script src="js/bundel.js"></script>
 </body>
